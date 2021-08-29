@@ -1,0 +1,6 @@
+For Python syntaxes, refer to https://www.w3schools.com/
+
+teams = [], should filled with dictionaries of teams loaded from .csv files, in other words, teams is a list of dictionaries.
+
+
+

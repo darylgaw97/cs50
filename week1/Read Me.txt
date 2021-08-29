@@ -1,0 +1,2 @@
+before using 'check50 cs50/problems/2021/spring/mario/more',
+remember to rename mario2.c to mario.c in CS50 IDE window.

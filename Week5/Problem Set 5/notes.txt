@@ -1,0 +1,25 @@
+Use strcpy to copy type char * to type char[].
+
+
+For freeing or adding to linked-list, drawing out what you are doing will help in implementing code and prevent orphaning nodes.
+
+
+When traversing through linked list, DO NOT use "for (node *n = table[i]; n->next != NULL; n = n->next),
+this will cause you to skip the last node in the linked list,
+instead DO use "for (node *n = table[i]; n != NULL; n = n->next)", and this will correctly traverse the linked list up to and including the last node.
+
+
+Remember to close file after finishing load to prevent memory leak.
+
+
+Better the hash function, better the search time.
+
+
+For time checking purpose, don't wait for output at terminal as it will take a long time,
+instead, do this:
+./speller text/aca.txt > output.txt
+then read the time from the output file, it will save up a lot of time.
+
+
+Your "hash" function must be case insensitive just like your "check" function,
+otherwise, a word that need to be checked may be hashed into a different linked-list, causing a false negative on the search result.

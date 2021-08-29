@@ -1,0 +1,11 @@
+1. Use 'sys.exit' to exit programme.
+
+
+2. Use 'csv.DictReader' to read .csv type files straightaway as dictionaries.
+
+
+3. When comparing between items inside list and/or dictionaries to find macth, make sure to compare same type against each other.
+(str to str, int to int)
+Trying to compare str to int will result in no match.
+Example:
+    str(4) != int(4)

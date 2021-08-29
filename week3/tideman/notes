@@ -1,0 +1,13 @@
+1. Got stucked on locked_pairs function, here is the takeaway:
+
+    Compare the loop function in tideman.c against the one in prototype.c:
+    
+        Notice that in prototype, after the first recursion is called and finished running, a value is already returned to locked_pairs function,
+        thereby disallowing the next "for loop" to be run, the code in prototype causes false negatives in certain scenarios.
+        
+    In conclusion, when using iteration loops in a recursive function, make sure when a recursive stack returns negative, the result is not
+    returned immediately to the main function, instead, DO use the 'continue' operator to go to the next iteration to find another possible positive, 
+    this way, if positive result lies ahead, it will not be ommited due to an earlier false negative return.
+
+
+2. For implementing the various functions in tideman.c, drawing out the tables for the corresponding function helps tremmendously.
